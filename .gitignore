@@ -23,6 +23,7 @@ tfplan
 credentials
 access-keys*.csv
 *accessKeys*.csv
+backend.hcl
 
 # --- Lambda build artifacts ---
 build/

@@ -17,3 +17,21 @@ variable "owner" {
   type    = string
   default = "AyoLaww"
 }
+
+variable "link_ttl_days" {
+  description = "How long a short link stays valid"
+  type        = number
+  default     = 90
+}
+
+variable "log_retention_days" {
+  description = "CloudWatch log retention, keeps storage costs near zero"
+  type        = number
+  default     = 14
+}
+
+variable "base_url" {
+  description = "Public base URL used in returned short links. Empty until Part 5."
+  type        = string
+  default     = ""
+}
