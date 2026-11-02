@@ -1,0 +1,2 @@
+bucket = "url-shortener-tfstate-<ACCOUNT_ID>-<REGION>"
+region = "<REGION>"
