@@ -14,3 +14,19 @@ output "create_link_function" {
 output "redirect_function" {
   value = aws_lambda_function.redirect.function_name
 }
+
+output "site_url" {
+  value = "https://${aws_cloudfront_distribution.site.domain_name}"
+}
+
+output "site_bucket_name" {
+  value = aws_s3_bucket.site.id
+}
+
+output "cloudfront_distribution_id" {
+  value = aws_cloudfront_distribution.site.id
+}
+
+output "aws_region" {
+  value = var.aws_region
+}

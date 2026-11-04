@@ -43,7 +43,7 @@ resource "aws_lambda_function" "create_link" {
   environment {
     variables = merge(
       local.common_env,
-      var.base_url != "" ? { BASE_URL = var.base_url } : {}
+      { BASE_URL = "https://${aws_cloudfront_distribution.site.domain_name}" }
     )
   }
 

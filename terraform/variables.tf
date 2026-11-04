@@ -29,9 +29,3 @@ variable "log_retention_days" {
   type        = number
   default     = 14
 }
-
-variable "base_url" {
-  description = "Public base URL used in returned short links. Empty until Part 5."
-  type        = string
-  default     = ""
-}
